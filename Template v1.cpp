@@ -14,9 +14,16 @@
 #define SIZE 1000000
 #define endl '\n'
 int caseno=1;
-#define CP() printf("Case %d: ",caseno++);
-#define R() freopen("in.txt","r",stdin);
-#define W() freopen("out.txt","w",stdout);
+#define CP() printf("Case %d: ",caseno++)
+#define R() freopen("in.txt","r",stdin)
+#define W() freopen("out.txt","w",stdout)
+#define sfi(_i) scanf("%d",&_i)
+#define sfc(_c) scanf("%c",&_c)
+#define pf1(_i) cout<<_i
+#define pfl() cout<<endl
+#define pfs() printf(" ")
+#define FOR(i,a,b) for(i=(a);i<(b);i++)
+#define REV(i,a,b) for(i=(a);i>=(b);i--)
 using namespace std;
 
 bool P[SIZE];
