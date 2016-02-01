@@ -26,8 +26,6 @@ int caseno=1;
 #define REV(i,a,b) for(i=(a);i>=(b);i--)
 using namespace std;
 
-bool P[SIZE];
-
 class T {
 public:
 	template<class X> static inline X Sq(X a) {return a*a;}
@@ -44,9 +42,9 @@ public:
 	static inline long long int Atoi(char *s);
 	static inline char toLower(char c) {return isUpper(c)?c+=32:c;}
 	static inline char toUpper(char c) {return isLower(c)?c-=32:c;}
-	static inline void primeSieve();
 };
-inline void T::primeSieve() {
+/*bool P[SIZE];
+void primeSieve() {
 	for(int i=0;i<=SIZE;i++) P[i]=1;
 	for(int i=2;i<=SIZE;i++ ) {
         if(P[i]==1) {
@@ -54,6 +52,7 @@ inline void T::primeSieve() {
         }
     }
 }
+*/
 inline long long int T::Atoi(char *s) {
     long long int n=0;
     for(int i=0;s[i]!='\0';i++) {
